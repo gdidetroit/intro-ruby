@@ -144,7 +144,7 @@
               <li class="fragment">IRB is a <span class="green">command line interface</span> to Ruby that is installed along with Ruby. It works kind of like a calculator and is a great way to get started quickly.</li>
               <li class="fragment"><strong>Open:</strong> In the terminal, type <code>irb</code></li>
               <li class="fragment"><strong>Quit:</strong> Type <code>quit</code> and then press <code>enter</code></li>
-              <li class="fragment">Follow along with the examples in the slides. Type them in!</li>
+              <li class="fragment">Follow along with the examples in the slides ahead. Type them in!</li>
               <li class="fragment">Feel free to explore as well. You will not accidentally break things.</li>
             </ul>
           </section>
@@ -152,35 +152,35 @@
           <!-- Arithmetic -->
           <section>
             <h3>Arithmetic</h3>
-            <p>Try out some calculator functions</p>
-            <pre>
-              <code contenteditable class="ruby">
-            3 + 4
-            2 * 4
-            6 - 2
-            4 / 2
-            4 /* 2
-            => SyntaxError: (irb):10:syntax error, unexpected *
-              </code>
-            </pre>
+            <p class="box">Try out some calculator functions</p>
+            <pre><code contenteditable class="ruby">
+                3 + 4
+
+                2 * 4
+
+                6 - 2
+
+                4 / 2
+
+                4 /* 2
+                => SyntaxError: (irb):10:syntax error, unexpected *
+              </code></pre>
           </section>
 
           <section>
             <h3>Errors are Neat!</h3>
-            <ul>
+            <ul class="list--tall box--small copy--small">
               <li class="fragment">There are different kinds of errors that can occur. We just saw the <strong>SyntaxError</strong> which often
                 helps us find misspelled words or missing quotes.
               </li>
-              <li class="fragment">Take time to read each Error. They often tell you how to fix the issue and can be a great
+              <li class="fragment box">Take time to read each Error. They often tell you how to fix the issue and can be a great
                 starting point when searching for help online.
               </li>
             </ul>
-            <pre>
-              <code contenteditable class="ruby fragment">
+            <pre class="fragment"><code contenteditable class="ruby">
             irb> hi
             NameError: undefined local variable or method `hi' for main:Object
-              </code>
-            </pre>
+              </code></pre>
           </section>
         </section>
 
@@ -188,12 +188,12 @@
         <section>
           <section>
             <h3>Variables</h3>
-            <ul>
+            <ul class="list--tall box--small copy--small">
               <li class="fragment">Variables are references to information.</li>
               <li class="fragment">We reference variables by name.</li>
-              <li class="fragment">They are called variable because the information they reference may change.</li>
+              <li class="fragment">They are called variables because the<br/>information they reference may change.</li>
             </ul>
-            <pre><code contenteditable class="ruby fragment">
+            <pre class="fragment"><code contenteditable class="ruby">
               # Everything after this pound sign will not be evaluated.
               # These are called comments and I will use them to annotate code
               age = 50
@@ -205,11 +205,11 @@
 
           <section>
             <h3>Ruby's Variables</h3>
-            <ul>
+            <ul class="list--tall box--small copy--small">
               <li class="fragment">Ruby has three kinds of variables, one kind of constant and exactly two pseudo-variables.</li>
               <li class="fragment">A local variable starts with a lower case letter or an underscore character (_) and consists entirely of letters, numbers and underscores.</li>
             </ul>
-            <pre><code contenteditable class="ruby fragment">
+            <pre class="fragment"><code contenteditable class="ruby">
             age = 50
             _age = 50
             _my_age = 50
@@ -218,12 +218,12 @@
 
           <section>
             <h3>What can I do with a Variable?</h3>
-            <ul>
+            <ul class="list--tall box--small copy--small">
               <li class="fragment">Create - Initialize</li>
               <li class="fragment">Access - Read</li>
               <li class="fragment">Assign - Replace</li>
             </ul>
-            <pre><code contenteditable class="ruby fragment">
+            <pre class="fragment"><code contenteditable class="ruby ">
             # create and assign in one line
             age = 0
 
@@ -237,13 +237,13 @@
 
           <section>
             <h3>Variable naming</h3>
-            <ul>
+            <ul class="list--tall box--small copy--small">
               <li class="fragment">Express what is stored inside</li>
               <li class="fragment">Make it easy to read</li>
               <li class="fragment">Should be understood by someone who has no idea what your program does</li>
               <li class="fragment">Should be unique</li>
             </ul>
-            <pre><code contenteditable class="ruby fragment">
+            <pre class="fragment"><code contenteditable class="ruby ">
             # good
             occupation = "software engineer"
 
@@ -256,12 +256,12 @@
 
           <section>
             <h3>Local Variable Values</h3>
-            <ul>
+            <ul class="list--tall box--small copy--small">
               <li class="fragment">No default value</li>
               <li class="fragment">No type declaration</li>
               <li class="fragment">Do not live forever</li>
             </ul>
-            <pre><code contenteditable class="ruby fragment">
+            <pre class="fragment"><code contenteditable class="ruby">
             # error
             name
 
@@ -275,13 +275,13 @@
         <section>
           <section>
             <h2>Data Types</h2>
-            <p class="fragment">Built-in: Numbers, Strings, Symbols, Booleans, Regular Expressions, Arrays, Ranges&amp;Hashes</p>
-            <ul>
+            <p class="fragment">Numbers &nbsp; | &nbsp; Strings &nbsp; | &nbsp; Symbols &nbsp; | &nbsp; Booleans &nbsp; | &nbsp; Regular Expressions &nbsp; | &nbsp; Arrays &nbsp; | &nbsp; Ranges &nbsp; | &nbsp; Hashes</p>
+            <ul class="list--tall box--small copy--small">
               <li class="fragment">Data always has a "type"</li>
               <li class="fragment">You will hear the words Class/Type/Object used interchangeably</li>
               <li class="fragment">Let's explore a few built in Objects</li>
             </ul>
-            <pre><code contenteditable class="ruby fragment">
+            <pre class="fragment"><code contenteditable class="ruby">
             irb> 1.class
             => Fixnum
             irb> "Hello".class
@@ -295,18 +295,19 @@
 
           <section>
             <h3>Strings</h3>
-            <p>Strings are characters inside double or single quotes.</p>
-            <pre><code contenteditable class="ruby fragment">
+            <p class="box--small copy--small">Strings are characters inside double or single quotes.</p>
+            <pre class="fragment"><code contenteditable class="ruby">
             a = 'Hello '
             b = "World"
             c = a + b
             c.reverse
             => "dlroW olleH"
             </code></pre>
-            <pre><code contenteditable class="ruby fragment">
+            <pre class="fragment"><code contenteditable class="ruby ">
             a = "Spam "
-            b = a * 4
+
             # Here multiplying a by 4 concatenates (links) four strings together
+            b = a * 4
             =>"Spam Spam Spam Spam "
             </code></pre>
           </section>
@@ -330,19 +331,23 @@
 
           <section>
             <h3>Numbers</h3>
-            <p>Numeric data comes in two types: <strong>Integers</strong> and <strong>Floats</strong></p>
-            <p>Integers are either <strong>Fixnum</strong> or <strong>Bignum</strong>. They do not have decimals.</p>
-            <pre><code contenteditable class="ruby fragment">
+            <p class="box">Numeric data comes in two types: <strong>Integers</strong> and <strong>Floats</strong></p>
+            <div  class="fragment">
+            <p class="copy--small">Integers are either <strong>Fixnum</strong> or <strong>Bignum</strong>. They do not have decimals.</p>
+            <pre style="height: 120px; overflow:hidden;"><code contenteditable class="ruby">
               irb> 1_000_000_000_000_000_000.class
                => Fixnum
               irb> 1_000_000_000_000_000_000_000.class
                => Bignum
             </code></pre>
-            <p>Floats are numbers with at least one number to the left of a decimal point.</p>
-            <pre><code contenteditable class="ruby fragment">
+            </div>
+            <div class="box--small fragment">
+            <p class="copy--small">Floats have at least one number to the left of a decimal point.</p>
+            <pre style="height: 120px; overflow:hidden;" class=""><code contenteditable class="ruby ">
               irb> 1.001.class
                => Float
             </code></pre>
+            </div>
           </section>
 
           <section>
@@ -364,9 +369,9 @@
 
           <section>
             <h3>Symbols</h3>
-            <p class="fragment">You can think of symbols as lightweight Strings.</p>
-            <p class="fragment">It's good to know these exist, but don't worry about them too much for now.</p>
-            <pre><code contenteditable class="ruby fragment">
+            <p class="box--small copy--small fragment">You can think of symbols as lightweight Strings.</p>
+            <p class="box--small copy--small fragment">It's good to know these exist, but don't<br/>worry about them too much for now.</p>
+            <pre class="fragment"><code contenteditable class="ruby">
             # transient and mutable
             "hello"
 
@@ -377,9 +382,9 @@
 
           <section>
             <h3>Booleans</h3>
-            <p class="fragment">This is another Object that we will learn about later.</p>
-            <p class="fragment">For now, when you hear Boolean, think TRUE and FALSE.</p>
-            <pre><code contenteditable class="ruby fragment">
+            <p class="box--small copy--small fragment">This is another Object that we will learn about later.</p>
+            <p class="box--small copy--small fragment">For now, when you hear Boolean, think TRUE and FALSE.</p>
+            <pre class="fragment"><code contenteditable class="ruby">
             # NOT true
             !true
             => false
@@ -391,10 +396,10 @@
           </section>
 
           <section>
-            <h3>Arrays, Ranges&amp;Hashes</h3>
-            <p>We will also leave these data types for the next class</p>
-            <p class="fragment">Examples of what they will look like:</p>
-            <pre><code contenteditable class="ruby fragment">
+            <h3>Arrays, Ranges &amp; Hashes</h3>
+            <p class="box--small copy--small fragment">We will also leave these data types for the next class</p>
+            <p class="box--small copy--small fragment">Examples of what they will look like:</p>
+            <pre class="fragment"><code contenteditable class="ruby">
             # Arrays are used to hold sets of data.
             irb> array_of_numbers = [1,2,3]
             irb> array_of_numbers.first
@@ -419,14 +424,13 @@
         <section>
           <section>
             <h3>Methods</h3>
-            <ul>
+            <ul class="list--tall box--small copy--small">
               <li class="fragment">Methods define the behavior for an Object.</li>
               <li class="fragment">String Objects can <strong>reverse</strong>, for example.</li>
               <li class="fragment">Some methods are accessed using our friend 'dot' and some are standalone.</li>
               <li class="fragment">Let's call some methods</li>
             </ul>
-            <pre>
-              <code contenteditable class="ruby fragment">
+            <pre class="fragment"><code contenteditable class="ruby">
             irb> puts "hello"
             hello
             => nil
@@ -436,33 +440,31 @@
             => "2"
             irb> "2" / 5
             NoMethodError: undefined method `/' for "2":String
-              </code>
-            </pre>
+              </code></pre>
           </section>
           <section>
             <h3>User Input</h3>
-            <ul>
+            <ul class="box--small list--tall copy--small">
               <li class="fragment">To obtain user input, use `gets`</li>
               <li class="fragment">To print out information, use `puts`</li>
               <li class="fragment">Let's create our first program together</li>
             </ul>
-            </br>
-            </br>
             <p class="fragment">Put the code below in a file and save it as name.rb</p>
-            <pre><code contenteditable class="fragment ruby">
+            <pre style="height: 120px; overflow:hidden;" class="fragment"><code contenteditable class=" ruby">
             puts 'Hello there, and what\'s your name?'
             name = gets
             puts 'Your name is ' + name.chomp! + '? What a lovely name!'
             puts 'Pleased to meet you, ' + name + '. :)'
             </code></pre>
             <p class="fragment">Run your program from the command line:</p>
-            <pre><code class="fragment">
+            <pre style="height: 80px; overflow:hidden" class="fragment"><code>
               ruby name.rb
             </code></pre>
           </section>
+
           <section>
             <h3>Let's Develop It</h3>
-            <ul>
+            <ul class="list--tall box--small copy--small">
               <li>Write your own program using 'puts' and 'gets' to ask a user for their age and then tell them how old they are in dog years.</li>
               <li>reminder: 'gets' method returns a string. To do math on it, convert it to an integer with .to_i method.</li>
               <pre><code class="ruby">
@@ -473,18 +475,14 @@
           </section>
           <section>
             <h3>Bonus Feature 1</h3>
-            <ul>
-              <li>Update your code to return a message in all capital letters.</li>
-            </ul>
+            <p class="box--small copy--small">Update your code to return a message in all capital letters.</p>
             <pre><code class="ruby">
             # YOU ARE 5 YEARS OLD IN DOG YEARS
             </code></pre>
           </section>
           <section>
             <h3>Bonus Feature 2</h3>
-            <ul>
-              <li>Update your code to return a message in all capital letters, reversed with a count of the characters returned in parens.</li>
-            </ul>
+            <p class="box--small copy--small">Update your code to return a message in all capital letters, reversed with a count of the characters returned in parens.</p>
             <pre><code class="ruby">
             # YOU ARE 5 YEARS OLD IN DOG YEARS (32 characters)
             </code></pre>
@@ -498,8 +496,8 @@
 
           <section>
             <h3>Homework</h3>
-            <p><strong>Practice:</strong> Write a command line program that asks the user for the year they were born, then calculates their age in years, days, and seconds. Tell the user how old they are in these different formats. (Note: you'll be using 'gets' and 'puts' in this program, along with some math)</p>
-            <p><strong>Prep:</strong> Read <a href="https://pine.fm/LearnToProgram/?Chapter=06" alt="Chp 6 of Learn to Program">Chapter 6</a> and <a href="https://pine.fm/LearnToProgram/?Chapter=07" alt="Chp 7 of Learn to Program">Chapter 7</a> of Learn To Program- don't try to do the exercises at the end yet, though.</p>
+            <p class="box--small copy--small left-align"><strong>Practice:</strong> Write a command line program that asks the user for the year they were born, then calculates their age in years, days, and seconds. Tell the user how old they are in these different formats. (Note: you'll be using 'gets' and 'puts' in this program, along with some math)</p>
+            <p class="box--small copy--small left-align"><strong>Prep:</strong> Read <a href="https://pine.fm/LearnToProgram/?Chapter=06" alt="Chp 6 of Learn to Program">Chapter 6</a> and <a href="https://pine.fm/LearnToProgram/?Chapter=07" alt="Chp 7 of Learn to Program">Chapter 7</a> of Learn To Program- don't try to do the exercises at the end yet, though.</p>
           </section>
 
           <section>
