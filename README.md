@@ -1,14 +1,14 @@
 # Intro to Ruby
 
 The slides for this course can be viewed [here](http://cherimarie.github.io/gdi-ruby)
- 
-This is an Intro to Ruby course, intended for eventual inclusion in the Girl Develop It Core Curriculum. All material by Cheri Allen and Heather Moore. Thanks to Chris Pine and Sandi Metz for inspirational books.
+
+This is an Intro to Ruby course, intended for eventual inclusion in the Girl Develop It Core Curriculum. Original material by Cheri Allen and Heather Moore. Adapted by Julie Cameron. Thanks to Chris Pine and Sandi Metz for inspirational books.
 
 The course is meant to be taught in 5 two-hour sections. Each of the slides and practice files are customizable according to the needs of a given class or audience.
 
 ## Classes
 
-### Class 0 
+### Setup (Class 0)
 
 Installfest & Intro to Command Line
 
@@ -22,9 +22,9 @@ What is programming? What is Ruby? We'll give you some context for the class, th
 
 ### Class 2
 
-Structured programming (loops and conditions), working with collections data types 
+Structured programming (loops and conditions), working with collections data types
 
-We'll create small programs in the text editor that use conditionals and loops for control flow. Then, we'll explore Ruby's collections data types, and see some of the ways we can work with them. 
+We'll create small programs in the text editor that use conditionals and loops for control flow. Then, we'll explore Ruby's collections data types, and see some of the ways we can work with them.
 
 ### Class 3
 
@@ -45,6 +45,6 @@ Ready to start programming? Want to learn one language that you can use to build
 
 Ruby is an open source language that powers applications and products like Hulu, LivingSocial, Groupon, and Github. There is a thriving, friendly community of users, and the job market for developers is strong.
 
-Through this five course series, you'll get a throrough introduction to programming fundamentals with Ruby. We'll use the Interactive RuBy shell; write command line programs that use loops, conditionals, methods, and classes; and learn the basics of object oriented programming. We'll mix lecture and practice, and help guide you through the coursework. 
+Through this five course series, you'll get a throrough introduction to programming fundamentals with Ruby. We'll use the Interactive RuBy shell; write command line programs that use loops, conditionals, methods, and classes; and learn the basics of object oriented programming. We'll mix lecture and practice, and help guide you through the coursework.
 
-We'll spend part of the first class meeting setting up your development environment, so there's no need to install software ahead of time. Just bring your laptop and be prepared to start coding! 
+We'll spend part of the first class meeting setting up your development environment, so there's no need to install software ahead of time. Just bring your laptop and be prepared to start coding!
