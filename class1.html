@@ -70,7 +70,7 @@
           <!-- Setting the Stage - 10 min -->
           <section>
             <h3>What we will cover today</h3>
-            <ul class="list--tall box--small">
+            <ul class="list--xtall box--small">
               <li class="fragment">What is programming?</li>
               <li class="fragment">Why Ruby?</li>
               <li class="fragment">Variables, Arithmetic &amp; Objects</li>
@@ -283,7 +283,7 @@
         <section>
           <section>
             <h2>Data Types</h2>
-            <p class="fragment">Numbers &nbsp; | &nbsp; Strings &nbsp; | &nbsp; Symbols &nbsp; | &nbsp; Booleans &nbsp; | &nbsp; Regular Expressions &nbsp; | &nbsp; Arrays &nbsp; | &nbsp; Ranges &nbsp; | &nbsp; Hashes</p>
+            <p class="fragment">Numbers &nbsp; | &nbsp; Strings &nbsp; | &nbsp; Symbols &nbsp; | &nbsp; Booleans<br/>Regular Expressions &nbsp; | &nbsp; Arrays &nbsp; | &nbsp; Ranges &nbsp; | &nbsp; Hashes</p>
             <ul class="list--tall box--small copy--small">
               <li class="fragment">Data always has a "type"</li>
               <li class="fragment">You will hear the words Class/Type/Object used interchangeably</li>
@@ -292,11 +292,14 @@
             <pre class="fragment"><code contenteditable class="ruby">
             irb> 1.class
             => Fixnum
+
             irb> "Hello".class
             => String
+
             irb> 1.0022.class
             => Float
-            irb> [1,2,3].class
+
+              irb> [1,2,3].class
             => Array
             </code></pre>
           </section>
@@ -442,10 +445,13 @@
             irb> puts "hello"
             hello
             => nil
+
             irb> "2".to_i
             => 2
+
             irb> 2.to_s
             => "2"
+
             irb> "2" / 5
             NoMethodError: undefined method `/' for "2":String
               </code></pre>
@@ -453,28 +459,28 @@
           <section>
             <h3>User Input</h3>
             <ul class="box--small list--tall copy--small">
-              <li class="fragment">To obtain user input, use `gets`</li>
-              <li class="fragment">To print out information, use `puts`</li>
+              <li class="fragment">To obtain user input, use <code>gets</code></li>
+              <li class="fragment">To print out information, use <code>puts</code></li>
               <li class="fragment">Let's create our first program together</li>
             </ul>
-            <p class="fragment">Put the code below in a file and save it as name.rb</p>
-            <pre style="height: 120px; overflow:hidden;" class="fragment"><code contenteditable class=" ruby">
-            puts 'Hello there, and what\'s your name?'
-            name = gets
-            puts 'Your name is ' + name.chomp! + '? What a lovely name!'
-            puts 'Pleased to meet you, ' + name + '. :)'
-            </code></pre>
-            <p class="fragment">Run your program from the command line:</p>
-            <pre style="height: 80px; overflow:hidden" class="fragment"><code>
-              ruby name.rb
-            </code></pre>
+            <div class="fragment"><p>Put the code below in a file and save it as name.rb</p>
+                        <pre style="height: 120px; overflow:hidden;"><code contenteditable class=" ruby">
+                        puts 'Hello there, and what\'s your name?'
+                        name = gets
+                        puts 'Your name is ' + name.chomp! + '? What a lovely name!'
+                        puts 'Pleased to meet you, ' + name + '. :)'
+                        </code></pre></div>
+            <div class="fragment"><p>Run your program from the command line:</p>
+                        <pre style="height: 80px; overflow:hidden"><code>
+                          ruby name.rb
+                        </code></pre></div>
           </section>
 
           <section>
             <h3>Let's Develop It</h3>
             <ul class="list--tall box--small copy--small">
-              <li>Write your own program using 'puts' and 'gets' to ask a user for their age and then tell them how old they are in dog years.</li>
-              <li>reminder: 'gets' method returns a string. To do math on it, convert it to an integer with .to_i method.</li>
+              <li>Write your own program using <code>puts</code> and <code>gets</code> to ask a user for their age and then tell them how old they are in dog years.</li>
+              <li>reminder: <code>gets</code> method returns a string. To do math on it, convert it to an integer with the <code>.to_i</code> method.</li>
               <pre><code class="ruby">
               #1 dog year = 7 human years
               user_age = gets.to_i
@@ -504,7 +510,7 @@
 
           <section>
             <h3>Homework</h3>
-            <p class="box--small copy--small left-align"><strong>Practice:</strong> Write a command line program that asks the user for the year they were born, then calculates their age in years, days, and seconds. Tell the user how old they are in these different formats. (Note: you'll be using 'gets' and 'puts' in this program, along with some math)</p>
+            <p class="box--small copy--small left-align"><strong>Practice:</strong> Write a command line program that asks the user for the year they were born, then calculates their age in years, days, and seconds. Tell the user how old they are in these different formats. (Note: you'll be using <code>gets</code> and <code>puts</code> in this program, along with some math)</p>
             <p class="box--small copy--small left-align"><strong>Prep:</strong> Read <a href="https://pine.fm/LearnToProgram/?Chapter=06" alt="Chp 6 of Learn to Program">Chapter 6</a> and <a href="https://pine.fm/LearnToProgram/?Chapter=07" alt="Chp 7 of Learn to Program">Chapter 7</a> of Learn To Program- don't try to do the exercises at the end yet, though.</p>
           </section>
 
