@@ -2,7 +2,7 @@
 
 The slides for this course can be viewed [here](http://cherimarie.github.io/gdi-ruby)
 
-This is an Intro to Ruby course, intended for eventual inclusion in the Girl Develop It Core Curriculum. Original material by Cheri Allen and Heather Moore. Adapted by Julie Cameron. Thanks to Chris Pine and Sandi Metz for inspirational books.
+This is an Intro to Ruby course, intended for eventual inclusion in the Girl Develop It Core Curriculum. Original material by Cheri Allen and Heather Moore. Adapted by Julie Cameron of the Ann Arbor chapter. Thanks to Chris Pine and Sandi Metz for inspirational books.
 
 The course is meant to be taught in 5 two-hour sections. Each of the slides and practice files are customizable according to the needs of a given class or audience.
 
