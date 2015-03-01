@@ -128,7 +128,7 @@
                       <td>a is greater than or equal to b</td>
                   </tr>
               </table>
-              <p>Learn more about logical operators in Ruby <a href="http://www.tutorialspoint.com/ruby/ruby_operators.htm" alt="Operators tutorial">here</a>.</p>
+              <p class="copy--xsmall box--small">Learn more about logical operators in Ruby <a href="http://www.tutorialspoint.com/ruby/ruby_operators.htm" alt="Operators tutorial">here</a>.</p>
           </section>
 
           <section>
@@ -148,7 +148,7 @@
                 3 &lt; 5
               </code></pre>
               <p class="box--small copy--small">Remember: Equals does not equal "equals equals"</p>
-              <p class="box--small copy--small"> <a href="http://ruby.learncodethehardway.org/book/ex27.html">Further reading </a> on boolean expressions...</p>
+              <p class="box--small copy--xsmall"> <a href="http://ruby.learncodethehardway.org/book/ex27.html">Further reading </a> on boolean expressions...</p>
           </section>
 
           <section>
@@ -188,7 +188,7 @@
                       <td><code>true</code></td>
                   </tr>
               </table>
-              <p class="box--small copy--small"> <a href="http://ruby.learncodethehardway.org/book/ex28.html">Further practice </a> on boolean expressions...</p>
+              <p class="box--small copy--xsmall"> <a href="http://ruby.learncodethehardway.org/book/ex28.html">Further practice </a> on boolean expressions...</p>
           </section>
 
           <section>
@@ -229,7 +229,7 @@
           <section>
               <h3>Conditionals</h3>
               <p class="copy--small box--small">When we want different code to execute depending on certain criteria, we use a <strong>conditional</strong></p>
-              <p class="copy--small box--small">We achieve this using <strong>if</strong> statements and boolean expressions.</p>
+              <p class="copy--small box--small">We achieve this using <code>if</code> statements and boolean expressions.</p>
               <pre><code  class="ruby">
                 if x == 5
                   puts 'x is equal to 5'
@@ -239,7 +239,7 @@
 
           <section>
               <h3>Conditionals</h3>
-              <p class="copy--small box--small">We often want a different block to execute if the statement is false. This can be accomplished using <strong>else</strong>.</p>
+              <p class="copy--small box--small">We often want a different block to execute if the statement is false. This can be accomplished using <code>else</code>.</p>
               <pre><code  class="ruby">
                 if x == 5
                   puts 'x is equal to 5'
@@ -290,8 +290,8 @@
           <!-- Let's develop it: 10 minutes  -->
           <section>
               <h3>Let's Develop It</h3>
-              <p class="copy--xsmall box">Write a program in your text editor that uses conditionals and user input to allow the user to play an adventure game.</p>
-              <p class="copy--xsmall box">"gets.chomp" is the value of user input at the command line, with the trailing whitespace chomped off. To do math with it, convert it to an integer with the ".to_i" method</p>
+              <p class="copy--small box">Write a program in your text editor that uses conditionals and user input to allow the user to play an adventure game.</p>
+              <p class="copy--xsmall box"><code>gets.chomp</code> is the value of user input at the command line, with the trailing whitespace chomped off. To do math with it, convert it to an integer with the <code>to_i</code> method</p>
               <pre style="height: 30px; overflow:hidden"><code>
                 input = gets.chomp.to_i
               </code></pre>
@@ -333,8 +333,8 @@
           <section>
             <h3>Loops</h3>
             <p class="box--small copy--small">It is often useful to perform a task and to repeat the process until a certain point is reached.</p>
-            <p class="box--small copy--small">The repeated execution of a set of statements is called <strong>iteration</strong>, or, more commonly, a loop.</p>
-            <p class="box--small copy--small">One way to achieve this, is with the <strong>while</strong> loop.</p>
+            <p class="box--small copy--small">The repeated execution of a set of statements is called <strong>iteration</strong>, or, more commonly, <strong>a loop</strong>.</p>
+            <p class="box--small copy--small">One way to achieve this, is with the <code>while</code> loop.</p>
             <pre><code  class="ruby">
             x = 10
 
@@ -358,7 +358,7 @@
                         end
                           </code></pre></div>
             <p class="copy--small box--small">The while statement takes a condition, and as long as it evaluates to true, the code block beneath it is repeated. This creates a <strong>loop</strong>.</p>
-            <p class="copy--small box--small"> Without the <code>x = x - 1</code> statement, to increment the value of x, this would be an <strong>infinite loop</strong> :( :( :(</p>
+            <p class="copy--small box--small"> Without the <code>x = x - 1</code> statement, to increment the value of <code>x</code>, this would be an <strong>infinite loop</strong> :( :( :(</p>
           </section>
 
           <section>
@@ -404,13 +404,13 @@
                               end
                             end
                             </code></pre></div>
-              <p>Learn more about loops in Ruby <a href="http://www.tutorialspoint.com/ruby/ruby_loops.htm" alt="Loops tutorial">here</a>.</p>
+              <p class="copy--xsmall box--small">Learn more about loops in Ruby <a href="http://www.tutorialspoint.com/ruby/ruby_loops.htm" alt="Loops tutorial">here</a>.</p>
           </section>
 
           <section>
               <h3>Each loops</h3>
               <p class="copy--small box--small">The most commonly used type of loop in Ruby is an each loop.</p>
-              <p class="copy--small box--small">It uses the <code>.each</code> method to iterate over a collection of elements, doing work to each one.</p>
+              <p class="copy--small box--small">It uses the <code>each</code> method to iterate over a collection of elements, doing work to each one.</p>
 
               <p class="copy--small box--small">First, we need a collection. Let's use a <strong>range</strong> of numbers to loop over.</p>
               <pre><code  class="ruby">
@@ -472,7 +472,7 @@
 
           <section>
             <h3>Ranges</h3>
-            <p>Try out these range methods in IRB.</p>
+            <p class="copy--small box--small">Try out these range methods in IRB.</p>
             <pre><code>
             (1..99).max
             ('b'...'z').include?('j')
@@ -488,12 +488,12 @@
 
             (22..28).to_a
             </code></pre>
-            <p>Learn more about ranges <a href="http://www.ruby-doc.org/core-2.1.1/Range.html" alt="Ruby Doc">here</a>.</p>
+            <p class="copy--xsmall box--small">Learn more about ranges <a href="http://www.ruby-doc.org/core-2.1.1/Range.html" alt="Ruby Doc">here</a>.</p>
           </section>
 
           <section>
               <h3>Arrays</h3>
-              <p class="copy--small box--small">Arrays have square brackets and can be filled with any type of object: integers, floats, strings, even other arrays or hashes.</p>
+              <p class="copy--small box--small">Arrays have square brackets <code>[]</code> and can be filled with any type of object: integers, floats, strings, even other arrays or hashes.</p>
               <pre><code  class="ruby">
               new_array = [1, 3, 5, 89, 212, 7, -100]
               arr = ["wow", "woooo", "zowie"]
@@ -505,7 +505,7 @@
               new_array.count
               arr.include?("yee ha")
               </code></pre>
-              <p class="copy--small box--small">Arrays are a great way to keep track of information that changes frequently.</p>
+              <p class="copy--xsmall box--small">Arrays are a great way to keep track of information that changes frequently.</p>
           </section>
 
           <section>
@@ -527,7 +527,7 @@
           </section>
 
           <section>
-              <h3>Adding & Deleting From Arrays</h3>
+              <h3>Adding &amp; Deleting From Arrays</h3>
               <p class="copy--small box--small">Adding and removing items to an array can be done in a variety of ways. These are the most common.</p>
               <pre><code  class="ruby">
               arr = ["wow", "woooo", "zowie"]
@@ -544,7 +544,7 @@
 
           <section>
               <h3>More Array Methods</h3>
-              <p class="copy--small box--small">Arrays are used a lot in Ruby. There are a lot of cool methods available for them. </p>
+              <p class="copy--small box--small">Arrays are used a lot in Ruby.<br/>There are a lot of cool methods available for them. </p>
               <pre><code  class="ruby">
               arr = ["dog", "cat", "turtle", "parakeet", "ferret"]
 
@@ -557,13 +557,13 @@
               arr.size          # returns the number of elements in the array
               arr.empty?        # returns a boolean
               </code></pre>
-              <p class="copy--small box--small">Learn more about arrays <a href="http://www.ruby-doc.org/core-2.1.0/Array.html" alt="ruby documentation - array class">here</a>.</p>
+              <p class="copy--xsmall box--small">Learn more about arrays <a href="http://www.ruby-doc.org/core-2.1.0/Array.html" alt="ruby documentation - array class">here</a>.</p>
           </section>
 
           <!-- minutes-->
           <section>
             <h3>Hashes</h3>
-            <p class="copy--small box--small">Hashes have curly braces and hash rockets and can be filled with any data type: integers, floats, strings, even arrays and hashes. </p>
+            <p class="copy--small box--small">Hashes have curly braces <code>{}</code> and "hash rockets" <code>=&gt;</code> and can be filled with any data type: integers, floats, strings, even arrays and hashes. </p>
             <pre><code  class="ruby">
             grades_hash = { "Jane Doe" => 10, "Jim Doe" => 6, "Jan Doe" => 8}
             new_hash = { 1 => "a", "d" => 12, "f" => 35 }
@@ -583,7 +583,7 @@
           <section>
             <h3>Accessing Elements in Hashes</h3>
             <p class="copy--small box--small">Hashes are <strong>unordered.</strong> Hashes are like dictionaries, with unique <strong>key / value</strong> pairs.</p>
-            <p class="copy--small box--small">Because hashes can have any type of object as an idex, and are unordered, we must access values by their <strong>key</strong>.</p>
+            <p class="copy--small box--small">Because hashes can have any type of object as an index, and are unordered, we must access values by their <strong>key</strong>.</p>
             <pre><code  class="ruby">
             grades_hash = { "Jane Doe" => 10, "Jim Doe" => 6, "Jan Doe" => 8}
             new_hash = { 1 => "a", "d" => 12, "f" => 35 }
@@ -621,13 +621,14 @@
             chapters.invert     # returns new hash with old one's values
                                 # as keys and keys as values
               </code></pre>
-              <p class="copy--small box--small">Learn more about hashes <a href="http://www.ruby-doc.org/core-2.1.1/Hash.html" alt="Ruby Docs">here</a>.</p>
+              <p class="copy--xsmall box--small">Learn more about hashes <a href="http://www.ruby-doc.org/core-2.1.1/Hash.html" alt="Ruby Docs">here</a>.</p>
           </section>
 
           <!-- minutes -->
           <section>
             <h3>Enumerable</h3>
-            <p class="copy--small box--small"><strong>Arrays</strong> and <strong>Hashes</strong> are both members of the <strong>Enumerable</strong> class. There are a lot of cool methods available for Enumerable, including <code>each</code>. </p>
+            <p class="copy--small box"><strong>Arrays</strong> and <strong>Hashes</strong> are both members of the <strong>Enumerable</strong> class.</p>
+            <p  class="copy--small box--small"> There are a lot of cool methods available for Enumerable,<br/>including <code>each</code>. </p>
 
             <!-- <p>Learn more about the methods available to Enumerable <a href="http://www.ruby-doc.org/core-2.1.1/Enumerable.html" alt="Ruby Docs">here</a>.</p> -->
           </section>
@@ -677,7 +678,7 @@
           <section>
             <h3>Let's Develop It</h3>
 
-            <p class="copy--small box--small">Write a program that prints out every number between 1 and 1000 that is divisible by 7.</p>
+            <p class="copy--small box">Write a program that prints out every number<br/>between 1 and 1000 that is divisible by 7.</p>
             <p class="copy--small box--small">Hint: the modulo operator, <code>%</code>, will be helpful.</p>
           </section>
 
@@ -740,7 +741,7 @@
 
           <section>
               <h3>Homework</h3>
-              <p class="box copy--small left-align"><strong>Practice:</strong> Find two interesting methods for Enumerable (via <a href="http://www.ruby-doc.org/core-2.1.1/Enumerable.html" alt="Ruby Docs">Ruby Docs</a>) and write a little program that uses them for arrays or hashes. Do any one the exercises at the end of <a href="http://pine.fm/LearnToProgram/?Chapter=06" alt="Chp 6 of Learn to Program">Chapter 6</a> of Learn to Program.</p>
+              <p class="box copy--small left-align"><strong>Practice:</strong> Find two interesting methods for Enumerable (via <a href="http://www.ruby-doc.org/core-2.1.1/Enumerable.html" alt="Ruby Docs">Ruby Docs</a>) and write a little program that uses them for arrays or hashes. Do any one of the exercises at the end of <a href="http://pine.fm/LearnToProgram/?Chapter=06" alt="Chp 6 of Learn to Program">Chapter 6</a> of Learn to Program.</p>
               <p class="box copy--small left-align"><strong>Prep:</strong> Read <a href="http://pine.fm/LearnToProgram/?Chapter=08" alt="Chp 8 of Learn to Program">Chapter 8</a> of Learn To Program- don't try to do the exercises at the end yet, though.</p>
           </section>
 
