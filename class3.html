@@ -183,66 +183,6 @@
           </section>
 
           <section>
-            <h3>Splat Arguments</h3>
-            <pre><code contenteditable class="ruby">
-            def greet(greeting, *names)
-              names.each do |name|
-                puts "#{greeting}, #{name}!"
-              end
-            end
-
-            >> greet("Hello", "Alice", "Bob", "Charlie")
-            Hello, Alice!
-            Hello, Bob!
-            Hello, Charlie!
-              </code></pre>
-          </section>
-
-          <section>
-            <h3>Default Values</h3>
-            <pre><code contenteditable class="ruby">
-            def eat(food = "chicken")
-              puts "Yum, #{food}!"
-            end
-
-            >> eat
-            Yum, chicken!
-
-            >> eat "arugula"
-            Yum, arugula!
-              </code></pre>
-          </section>
-
-          <section>
-            <h3>Default Hash Parameter</h3>
-            <pre><code contenteditable class="ruby">
-            def add_to_x_and_y(amount, vals)
-              x = vals[:x]
-              y = vals[:y]
-              x + y + amount
-            end
-
-            add_to_x_and_y(2, {:x => 1, :y => 2})
-              </code></pre>
-          </section>
-
-          <section>
-            <h3>Named Parameters</h3>
-            <p class="copy--small box--small">To pass variable parameters, or to pass named parameters,<br/>you can use an <strong>options hash</strong>.</p>
-            <pre><code contenteditable class="ruby">
-            def bake(name, options = {})
-              flour = options[:flour] || "rye"
-              creamer = options[:creamer] || "cream"
-              puts "baking a nice #{flour} loaf with #{creamer}"
-            end
-
-            bake("Wheat")
-            bake("Sourdough", :flour => "sour")
-            bake("Pumpernickel", :creamer => "butter")
-              </code></pre>
-          </section>
-
-          <section>
             <h3>Methods &amp; Variables</h3>
             <p class="copy--small box--small"><strong>Local variables</strong> are only available in the methods where they were defined.</p>
             <pre><code contenteditable class="ruby">
