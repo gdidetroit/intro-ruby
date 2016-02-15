@@ -122,9 +122,10 @@
           <section>
             <h3>Write a Method</h3>
             <p class="copy--small box--small">Let's write a method together...</p>
-            <pre style="height: 80px; overflow: hidden"><code contenteditable class="ruby">
+            <pre style="height: 100px; overflow: hidden"><code contenteditable class="ruby">
             def subtract(x, y)
-              x - y
+              result = x - y
+              return result
             end
             </code></pre>
             <p class="copy--xsmall box--small"><code>def</code> means define</p>
@@ -148,25 +149,23 @@
           <section>
             <h3>Method Return Value</h3>
             <p class="copy--small box--small">Every Ruby method returns something.</p>
-            <p class="copy--small box--small">Usually, it's the last statement in the method.</p>
-            <p class="copy--small box--small">It could be the value sent to <strong>return</strong> if that came first.</p>
+            <p class="copy--small box--small">The <code>return</code> keyword indicates what comes back when calling the method</p>
             <pre><code contenteditable class="ruby">
             def subtract(x,y)
-              x - y
-              'another thing'
-            end
-
-            return_value = subtract(5, 2)
-            puts return_value
-
-            def subtract(x,y)
               return x - y
-              'another thing'
+            end
+
+            def subtract_that_lies(x,y)
+              result = x - y
+              return "a string literal, not the result of subtraction"
             end
 
             return_value = subtract(5, 2)
-            puts return_value
-              </code></pre>
+            puts return_value # 3
+
+            return_value = subtract_the_lies(5, 2)
+            puts return_value #  "a string literal, not the result of subtraction"
+            </code></pre>
           </section>
 
           <section>
