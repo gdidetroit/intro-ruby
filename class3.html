@@ -352,11 +352,22 @@
             <div class="fragment"><p class="copy--xsmall box--small">You might use Inheritance if two objects have the same properties and methods.<br/>This way you don't need to write the same thing twice.
                         </p>
                         <pre><code contenteditable class=" ruby">
-                          class MyString < String
+                          class Person
+                            def initialize(name, birth_year)
+                              @name = name
+                              @birth_year = birth_year
+                            end
+
+                            def age
+                              Time.now.year - @birth_year
+                            end
                           end
 
-                          my_string = MyString.new
-                          my_string.upcase
+                          class Actor < Person
+                            def act_your_heart_out
+                              puts "I am acting! \o/"
+                            end
+                          end
                         </code></pre></div>
           </section>
         </section>
