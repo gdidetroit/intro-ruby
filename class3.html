@@ -228,52 +228,91 @@
           </section>
 
           <section>
-            <h3>Object Class</h3>
-            <p class="copy--small box--small"><strong>Objects</strong> can be grouped by Class.</p>
-            <p class="copy--small box--smallfragment">Classes define a template for objects. They describe what a certain type of object can do and what properties they have in common.</p>
-            <p class="copy--small box--small">There are many kinds of objects, including<br/><code>String</code>, <code>Number</code>, <code>Array</code>, <code>Hash</code>, <code>Time</code>, ...</p>
+            <h3>Class Definition</h3>
+            <p class="copy--small box--small"><strong>Objects</strong> are defined by their <strong>Class</strong></p>
+            <p class="copy--small box--smallfragment">They are the blueprint for what your object can do, and they're what allow you to make your own custom objects for your programs.</p>
             <div class="fragment">
-            <p class="copy--small box--small">To create an object we use <code>.new</code></p>
-            <pre  style="height: 30px; overflow: hidden"><code contenteditable class=" ruby">
-            array = Array.new
+            <pre><code contenteditable class=" ruby">
+            class Person
+              def initialize(name, birth_year)
+                @name = name
+                @birth_year = birth_year
+              end
+
+              def age
+                Time.now.year - @birth_year
+              end
+
+              def greet
+                return "Hi, my name is #{@name}, and I am #{self.age} years old"
+              end
+            end
             </code></pre>
-            <p class="copy--small box--small"><code>array</code> now refers to an object <i>instance</i></p>
             </div>
           </section>
 
           <section>
             <h3>Object Methods</h3>
             <p class="copy--small box--small">Methods can be defined on objects.</p>
+            <p class="copy--small box--small">They give us some behavior, some chunk of reusable work that live with our objects.</p>
             <pre class="fragment "><code contenteditable class="ruby">
-            array = Object.new
-
-            def array.delete
-              puts "deleted the array"
+            class Child
+              def favorite_food
+                ["Hamburgers", "Waffles", "Apple Pie"].sample
+              end
             end
 
-            array.methods(false)
-                    </code></pre>
+            child = Child.new
+            child.favorite_food # some random food…
+            </code></pre>
           </section>
 
           <section>
             <h3>Instance Variables</h3>
-            <p class="copy--small box--small">Represent object state</p>
+            <p class="copy--small box--small">Represent object state, the information or data that lives with our objects</p>
             <p class="copy--small box--small">Names start with an <code>@</code></p>
-            <p class="copy--small box--small">Only visible inside the object</p>
+            <p class="copy--small box--small">Useable across all of our object's methods</p>
             <pre class="fragment"><code contenteditable class=" ruby">
-            cookie = Object.new
+            class Cookie
+              def add_chips(number_of_chips)
+                @number_of_chips = number_of_chips
+              end
 
-            def cookie.add_chips(num_chips)
-              @chips = num_chips
+              def yummy?
+                @number_of_chips > 100
+              end
             end
 
-            def cookie.yummy?
-              @chips > 100
+            cookie = Cookie.new
+            cookie.add_chips(50)
+            cookie.yummy? # false
+
+            cookie.add_chips(200)
+            cookie.yummy? # true
+            </code></pre>
+          </section>
+
+          <section>
+            <h3>Putting It All Together</h3>
+            <pre><code contenteditable class=" ruby">
+            class Person
+              def initialize(name, birth_year)
+                @name = name
+                @birth_year = birth_year
+              end
+
+              def age
+                Time.now.year - @birth_year
+              end
+
+              def greet
+                return "Hi, my name is #{@name}, and I am #{self.age} years old"
+              end
             end
 
-            cookie.add_chips(500)
-            cookie.yummy?   #=> true
-                    </code></pre>
+            john = Person.new("John", 1990)
+            john.greet # "Hi, my name is John, and I am 26 years old"
+            </code></pre>
           </section>
         </section>
 
